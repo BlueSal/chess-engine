@@ -11,6 +11,14 @@
 #define set_bit(bitboard, square) (bitboard |= (1ULL << square))
 #define pop_bit(bitboard, square) (get_bit(bitboard, square) ? bitboard ^= (1ULL << square) : 0)
 
+/*
+    Const numbers to represent some masks for the board
+*/
+#define not_a_file 18374403900871474942ULL
+#define not_h_file 9187201950435737471ULL
+#define not_first_rank 72057594037927935ULL
+#define not_eighth_rank 18446744073709551360ULL
+
 
 /*
     This enum is important to be able to call cells simply by name
